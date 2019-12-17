@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+a{text-decoration: none;}
+
+.row{display: flex;flex-wrap: wrap;justify-content: space-between;}
+:root{
+    --main-color1:red;
+}
+/* -------main------------------------------- */
+#nav 
+{
+    .navbar{
+        background-color: purple !important;;
+        .logo{
+            width: 35px;
+            height: 35px;
+            border: 1px white solid;
+            padding:  5px;
+            
+        }
+     #new_art{
+        //  width: 750px;
+         #left{border-left: 1px solid rgba(128, 128, 128, 0.432);}
+         .dropdown-item {text-align: right;;
+        font-size: .8rem;
+    &:hover{background-color: rgba(255, 105, 180, 0.397);
+    color: purple;
+    box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;
+}
+    }
+     }
+
+    }
+    
+.li_act{background-color: orchid ;}
+}
+.dropdown-item {
+&:hover{background-color: rgba(255, 105, 180, 0.397) !important;
+color: purple;box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;}}
+#header{
+     .jumbotron{
+         .title1{margin: 20px auto;color:rgb(70, 2, 70);font-weight: bold;
+            box-shadow: rgb(252, 246, 252) 4px 4px 2px , rgb(248, 244, 248) -4px -4px 2px; 
+            text-shadow: 2px 2px 2px #fff;
+            font-size: 3.3rem;
+            padding: 15px 0;           ;
+        }
+        .row{p{color: #000;font-size: 1.5rem;font-weight: bold;}h1{color: purple;;font-weight: bold;text-shadow: #fff 2px 2px 2px;}}
+         margin-top: 40px;
+         height: 100vh;
+        background-image: url("../imges/baner.jpg");
+
+        background-size: cover;
+        // background-repeat: repeat-y;
+        background-position-x: center;
+        img{border-radius: 10px;opacity: .5;width: 100%;border: #fff solid 5px;box-shadow: purple 2px 2px 5px , rgb(14, 13, 14) -2px -2px 5px}
+}}
+#side_bar{box-shadow: purple 2px 2px 5px , purple -2px -2px 5px;
+    background-color: rgba(255, 105, 180, 0.397);
+    padding: 20px 10px;
+    width: 80%;
+    margin: 10px auto;
+    .sid_ul{
+        .sid_li{list-style: none;
+        padding: 7px 5px 5px 0;
+        a{text-decoration: none;}
+        &:hover{background-color: rgba(255, 105, 180, 0.397);
+            color: purple;
+            box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;
+        }
+    }
+        h5{text-align: right;color: purple;}  
+      }
+}
+#footer{
+    // height: 20vh;
+    background-color: purple;
+    color: #fff;
+#social{
+    background-color: #fff;
+    box-shadow: rgb(3, 3, 3) 1px 1px 5px;
+    border-radius: 20px;
+    margin: 30px 0;
+    .face a {Color:#4267b2;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;} }
+    .tube a {Color:#ff0000;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}}
+    .blog a {color:#ff5722;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}}
+
+}
+}
+#main{
+    width: 95%;
+    margin: 0 auto;
+    .card{display: none;
+    &:hover{box-shadow: rgb(0, 0, 0) 2px 2px 5px , rgb(0, 0, 0) -2px -2px 5px;}
+    }
+     h4{text-align: right;color: purple;}
+     iframe{margin: 20px auto;}
+     #book_card{margin: 20px 0;}
+    #back_btn{background-color: purple; color: #fff;margin: 20px 0;}
+     
+}
+.main-content,#nav_list{
+    .navigator{
+        ul{text-align: center;
+            li{ list-style: none;
+                display: inline-block;
+                margin: 20px 0;
+                a{
+                padding: 5px 10px;
+                color: purple;
+                background-color: #fff;
+                text-decoration: none;
+                border: purple 1px solid;
+                &:hover{color: #fff;background-color: plum;}
+            }
+        }
+        }
+    }
+}
+.act{color: #fff;background-color: plum;font-size: 2rem; opacity: .5; cursor:none;}
+#vid_title{text-align: center;direction: rtl;margin: 20px auto;}
+#to_up{ display: none;
+    a{
+      box-shadow: black 1px 1px 5px;
+      background-color: purple;
+      width: 50px;
+      height: 50px;
+      position: fixed;
+      bottom: 108px;
+      right: 20px;
+      font-size: 2rem;
+      text-align: center;
+      padding: 3px 0;
+      z-index: 999;
+      
+  }}
+#tab-title{
+    direction: rtl;
+}
