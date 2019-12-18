@@ -31,7 +31,7 @@ function main_list(max,start,finish)
     let id=Number(start)+1
     for(let i=start ;i<=finish ;i++){
         cont +=`<tr>
-        <td scope="row"><a href="${data.items[i].url}">${data.items[i].url}</a></td>
+        <td scope="row"><a href="posts.html?${data.items[i].id}">${data.items[i].url}</a></td>
         <td id="tab-title" class="text-right">${data.items[i].title}</td>
         <th>`+id+`</th></tr>`
         id++

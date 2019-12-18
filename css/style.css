@@ -147,7 +147,6 @@ a {
   -webkit-box-shadow: #030303 1px 1px 5px;
           box-shadow: #030303 1px 1px 5px;
   border-radius: 20px;
-  margin: 30px 0;
 }
 
 #footer #social .face a {
@@ -280,5 +279,36 @@ a {
 
 #tab-title {
   direction: rtl;
+}
+
+#pg-head .title2 {
+  color: purple;
+  padding: 10px 0 20px 0;
+  background-color: #f5aef5;
+  -webkit-box-shadow: black 2px 2px 5px, black -2px -2px 5px;
+          box-shadow: black 2px 2px 5px, black -2px -2px 5px;
+}
+
+#post_cont {
+  -webkit-box-shadow: black 2px 2px 5px, black -2px -2px 5px;
+          box-shadow: black 2px 2px 5px, black -2px -2px 5px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+
+#post_body {
+  background-color: rgba(178, 214, 248, 0.877);
+}
+
+#maxp {
+  direction: rtl;
+  text-align: center;
+  white-space: normal;
+}
+
+#empty {
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */

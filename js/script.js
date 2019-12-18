@@ -1,5 +1,5 @@
 let url_json=""
-if (navigator.onLine==true){url_json="https://api.jsonbin.io/b/5debbbc3cb4ac6042075d3a4/3"}else{url_json="../title2.json"}
+if (navigator.onLine==true){url_json="https://api.jsonbin.io/b/5debbbc3cb4ac6042075d3a4/5"}else{url_json="../title2.json"}
 let xhr=new XMLHttpRequest
 xhr.open("Get",url_json)
 xhr.onload=function(){
@@ -12,8 +12,8 @@ xhr.onload=function(){
  let new_arr=new Array
  new_arr=title_arr[0].new_title
  for(i=0 ; i < new_arr.length ; i=i+2){
-    if(title_arr[0].new_title[i]){title_1 +=`<a class="dropdown-item" href="${title_arr[0].new_title[i].link}">${title_arr[0].new_title[i].title}</a>`}
-    if(title_arr[0].new_title[i+1] ){title_2 +=`<a class="dropdown-item" href="${title_arr[0].new_title[i+1].link}">${title_arr[0].new_title[i+1].title}</a>`}
+    if(title_arr[0].new_title[i]){title_1 +=`<a class="dropdown-item" href="pages/posts.html?${title_arr[0].new_title[i].id}">${title_arr[0].new_title[i].title}</a>`}
+    if(title_arr[0].new_title[i+1] ){title_2 +=`<a class="dropdown-item" href="pages/posts.html?${title_arr[0].new_title[i+1].id}">${title_arr[0].new_title[i+1].title}</a>`}
     document.getElementById("left").innerHTML=title_1
     document.getElementById("right").innerHTML=title_2
  }
@@ -22,8 +22,8 @@ xhr.onload=function(){
  let pop_2=""
  let pop_arr=title_arr[0].poup_title
  for(i=0 ; i < pop_arr.length ; i=i+2){
-    if(title_arr[0].poup_title[i]){pop_1 +=`<a class="dropdown-item" href="${title_arr[0].poup_title[i].link}">${title_arr[0].poup_title[i].title}</a>`}
-    if(title_arr[0].poup_title[i+1] ){pop_2 +=`<a class="dropdown-item" href="${title_arr[0].poup_title[i+1].link}">${title_arr[0].poup_title[i+1].title}</a>`}
+    if(title_arr[0].poup_title[i]){pop_1 +=`<a class="dropdown-item" href="pages/posts.html?${title_arr[0].poup_title[i].id}">${title_arr[0].poup_title[i].title}</a>`}
+    if(title_arr[0].poup_title[i+1] ){pop_2 +=`<a class="dropdown-item" href="pages/posts.html?${title_arr[0].poup_title[i+1].id}">${title_arr[0].poup_title[i+1].title}</a>`}
     document.querySelector("#popart #left").innerHTML=pop_1
     document.querySelector("#popart #right").innerHTML=pop_2
  }
@@ -51,14 +51,14 @@ xhr.onload=function(){
    <div class="col-md-8">
      <div class="card-body">
        <h5 class="card-title">${ss.title}</h5>
-       <p class="card-text">${ss.body}<span><a href="${ss.link}"> See More...</a></span>
+       <p class="card-text">${ss.body}<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
        </p>
        <p class="card-text"><small class="text-muted">Last updated ${ss.time} ago</small></p>
      </div>
    </div>
  </div>
 </div>`
-enginerring_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${ss.link}">${ss.title}</a></li>`}
+enginerring_item+=`<li class="sid_li text-right"><a class=" text-dark" href="pages/posts.html?${ss.id}">${ss.title}</a></li>`}
  for(let ss of title_arr[0].pmp_title)
  {pmp_card+=`<div class="card mb-3" page="${ss.page}">
  <div class="row no-gutters">
@@ -68,14 +68,14 @@ enginerring_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${s
    <div class="col-md-8">
      <div class="card-body">
        <h5 class="card-title">${ss.title}</h5>
-       <p class="card-text">${ss.body}<span><a href="${ss.link}"> See More...</a></span>
+       <p class="card-text">${ss.body}<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
        </p>
        <p class="card-text"><small class="text-muted">Last updated ${ss.time} ago</small></p>
      </div>
    </div>
  </div>
 </div>`
- pmp_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${ss.link}">${ss.title}</a></li>`}
+ pmp_item+=`<li class="sid_li text-right"><a class=" text-dark" href="pages/posts.html?${ss.id}">${ss.title}</a></li>`}
  for(let ss of title_arr[0].exec_title)
  {exec_card+=`<div class="card mb-3" page="${ss.page}">
  <div class="row no-gutters">
@@ -85,14 +85,14 @@ enginerring_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${s
    <div class="col-md-8">
      <div class="card-body">
        <h5 class="card-title">${ss.title}</h5>
-       <p class="card-text">${ss.body}<span><a href="${ss.link}"> See More...</a></span>
+       <p class="card-text">${ss.body}<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
        </p>
        <p class="card-text"><small class="text-muted">Last updated ${ss.time} ago</small></p>
      </div>
    </div>
  </div>
 </div>`
- exec_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${ss.link}">${ss.title}</a></li>`}
+ exec_item+=`<li class="sid_li text-right"><a class=" text-dark" href="pages/posts.html?${ss.id}">${ss.title}</a></li>`}
  for(let ss of title_arr[0].other_title)
  {other_card+=`<div class="card mb-3" page="${ss.page}" >
  <div class="row no-gutters">
@@ -102,14 +102,14 @@ enginerring_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${s
    <div class="col-md-8">
      <div class="card-body">
        <h5 class="card-title">${ss.title}</h5>
-       <p class="card-text">${ss.body}<span><a href="${ss.link}"> See More...</a></span>
+       <p class="card-text">${ss.body}<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
        </p>
        <p class="card-text"><small class="text-muted">Last updated ${ss.time} ago</small></p>
      </div>
    </div>
  </div>
 </div>`
-other_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${ss.link}">${ss.title}</a></li>`}
+other_item+=`<li class="sid_li text-right"><a class=" text-dark" href="pages/posts.html?${ss.id}">${ss.title}</a></li>`}
 for(let ss of title_arr[0].english_title)
  {english_card+=`<div class="card mb-3" page="${ss.page}" >
  <div class="row no-gutters">
@@ -119,14 +119,14 @@ for(let ss of title_arr[0].english_title)
    <div class="col-md-8">
      <div class="card-body">
        <h5 class="card-title">${ss.title}</h5>
-       <p class="card-text">${ss.body}<span><a href="${ss.link}"> See More...</a></span>
+       <p class="card-text">${ss.body}<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
        </p>
        <p class="card-text"><small class="text-muted">Last updated ${ss.time} ago</small></p>
      </div>
    </div>
  </div>
 </div>`
-english_item+=`<li class="sid_li text-right"><a class=" text-dark" href="${ss.link}">${ss.title}</a></li>`}
+english_item+=`<li class="sid_li text-right"><a class=" text-dark" href="pages/posts.html?${ss.id}">${ss.title}</a></li>`}
 
 document.querySelector("#side_bar ul").innerHTML=
 "<h5 id='engr'>المقالات الهندسيه</h5>"+enginerring_item +"<hr></hr>"
@@ -148,7 +148,7 @@ document.getElementById("bbok").onclick=function(){
   <div class="card-body">
     <h5 class="card-title">${book.title}</h5>
     <p class="card-text">${book.body}</p>
-    <a href="${book.link}" class="btn btn-primary">Download</a>
+    <a href="pages/posts.html?${book.id}" class="btn btn-primary">Download</a>
   </div>
 </div>`
   }

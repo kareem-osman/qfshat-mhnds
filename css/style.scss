@@ -27,7 +27,7 @@ a{text-decoration: none;}
      #new_art{
         //  width: 750px;
          #left{border-left: 1px solid rgba(128, 128, 128, 0.432);}
-         .dropdown-item {text-align: right;;
+         .dropdown-item {text-align: right;
         font-size: .8rem;
     &:hover{background-color: rgba(255, 105, 180, 0.397);
     color: purple;
@@ -86,7 +86,7 @@ color: purple;box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;}}
     background-color: #fff;
     box-shadow: rgb(3, 3, 3) 1px 1px 5px;
     border-radius: 20px;
-    margin: 30px 0;
+    // margin: 30px 0;
     .face a {Color:#4267b2;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;} }
     .tube a {Color:#ff0000;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}}
     .blog a {color:#ff5722;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}}
@@ -140,6 +140,27 @@ color: purple;box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;}}
       z-index: 999;
       
   }}
+//   --------------------------------------------------------------------
 #tab-title{
     direction: rtl;
 }
+#pg-head .title2{
+    color: purple;
+    // border: purple 2px solid;
+    padding: 10px 0 20px 0;
+    background-color: rgb(245, 174, 245);
+    box-shadow: rgb(0, 0, 0) 2px 2px 5px , rgb(0, 0, 0) -2px -2px 5px;
+
+}
+// ---------------------------------------
+#post_cont{
+    box-shadow: rgb(0, 0, 0) 2px 2px 5px , rgb(0, 0, 0) -2px -2px 5px;
+    padding: 20px ;
+    margin-top: 10px ;
+    margin-bottom: 20px;
+    background-color: #fff;
+    
+}
+#post_body{background-color: rgba(178, 214, 248, 0.877);}
+#maxp{direction: rtl;text-align: center;white-space: normal;}
+#empty{height: 100px;}

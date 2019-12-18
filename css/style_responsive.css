@@ -1,4 +1,10 @@
+@media  screen and (max-width:768px){
+    html{font-size: 13px;}
+    #empty{height: 120px;}
+    
+    }
 @media  screen and (max-width:400px){
 html{font-size: 10px;}
 .container{width: 100%;}
+#social{margin: 10px 0;}
 }
