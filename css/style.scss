@@ -38,12 +38,15 @@ a{text-decoration: none;}
 
     }
     
-.li_act{background-color: orchid ;}
+
 }
 .dropdown-item {
 &:hover{background-color: rgba(255, 105, 180, 0.397) !important;
 color: purple;box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;}}
-#header{
+#header
+{
+    
+
      .jumbotron{
          .title1{margin: 20px auto;color:rgb(70, 2, 70);font-weight: bold;
             box-shadow: rgb(252, 246, 252) 4px 4px 2px , rgb(248, 244, 248) -4px -4px 2px; 
@@ -78,20 +81,11 @@ color: purple;box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;}}
         h5{text-align: right;color: purple;}  
       }
 }
-#footer{
+#footer
+{
     // height: 20vh;
     background-color: purple;
     color: #fff;
-#social{
-    background-color: #fff;
-    box-shadow: rgb(3, 3, 3) 1px 1px 5px;
-    border-radius: 20px;
-    // margin: 30px 0;
-    .face a {Color:#4267b2;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;} }
-    .tube a {Color:#ff0000;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}}
-    .blog a {color:#ff5722;font-size: 2.2rem; margin:0 5px;transition: .2s;i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}}
-
-}
 }
 #main{
     width: 95%;
@@ -164,3 +158,75 @@ color: purple;box-shadow: purple 1px 1px 2px , purple -1px -1px 2px;}}
 #post_body{background-color: rgba(178, 214, 248, 0.877);}
 #maxp{direction: rtl;text-align: center;white-space: normal;}
 #empty{height: 100px;}
+
+
+// ---------------------search-engine
+
+.cse .gsc-control-cse, .gsc-control-cse 
+{
+    padding: 0 !important;
+    padding-top: 5px !important;
+}
+input.gsc-input {
+    font-size: 14px !important;
+}
+// ----------list-btn
+#list_btn
+{
+    .li_act
+    {
+    background-color: #800080 ;
+    color: #FFF;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    opacity: .3;
+    transition: .3s;
+    z-index: 999;
+    &:hover
+    {
+        opacity: 1;
+        font-size: 1.4rem;
+    }
+    }
+}
+
+// -------------social btn----
+#social
+{
+    background-color: transparent;
+    box-shadow: rgb(3, 3, 3) 1px 1px 5px;
+    border-radius: 10px;
+    border: 3px #fff solid;
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    z-index: 999;
+    opacity: .8;
+    height: 50px;
+    overflow: hidden;
+    transition: .5s;
+    &:hover
+    {
+        opacity: 1;
+        height: 150px;
+        background-color: #fff;
+    }
+    a
+    {
+        
+        font-size: 2.2rem; 
+        margin:0 5px;
+        transition: .2s;
+        text-align: center;
+        display: block;
+        i:hover{box-shadow: rgb(3, 3, 3) 1px 1px 2px;}
+    }
+    // margin: 30px 0;
+    .face a {Color:#242c3d;}
+    .tube a {Color:#ff0000}
+    .blog a {color:#ff5722;}
+
+}
+

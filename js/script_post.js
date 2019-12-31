@@ -8,6 +8,7 @@ $("title").html(date_post.title)
 $("#post_cont").html(date_post.content)
 
 
+
 })
 
 

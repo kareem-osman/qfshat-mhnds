@@ -51,7 +51,7 @@ xhr.onload=function(){
    <div class="col-md-8">
      <div class="card-body">
        <h5 class="card-title">${ss.title}</h5>
-       <p class="card-text">${ss.body}<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
+       <p class="card-text">This is articles, I were collected by me to benefit each engineers and I wish that share to all engineers & yours friends<span><a href="pages/posts.html?${ss.id}"> See More...</a></span>
        </p>
        <p class="card-text"><small class="text-muted">Last updated ${ss.time} ago</small></p>
      </div>
@@ -197,18 +197,7 @@ function bac_btn(){
   location.reload()
 }
 $(function(){
-  $(window).scroll(function(){
-        
-    if($(this).scrollTop() == 0){
-        $("#to_up").hide()
-
-    }else{$("#to_up").show()
-}})
-$("#to_up").click(function(){
-  $("html,body").animate(
-      {scrollTop:0},800
-  )
-})
+  
 $("#to_side a").on("click",function(){
   let target=$(this).attr("href")
   $("body , html").animate({
