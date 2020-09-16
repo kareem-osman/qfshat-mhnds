@@ -1,6 +1,1 @@
 qfshatmhnds.xyz
-$ dig qfshatmhnds.xyz +noall +answer
-> qfshatmhnds.xyz     3600    IN A     185.199.108.153
-> qfshatmhnds.xyz     3600    IN A     185.199.109.153
-> qfshatmhnds.xyz     3600    IN A     185.199.110.153
->qfshatmhnds.xyz     3600    IN A     185.199.111.153
